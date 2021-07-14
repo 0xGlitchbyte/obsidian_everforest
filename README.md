@@ -19,6 +19,12 @@ This is an [Everforest](https://github.com/sainnhe/everforest-vscode) theme for
 ## Installation
 Simply copy the `everforest.css` file to your vault directory/.obsidian/themes to choose it from your settings.
 
+TODO:
+- Fix syntax highlighting in code blocks.
+- Create light/dark Hard Flat scheme.
+- Create light/dark Soft Contrast scheme.
+
+
 ![](dark_v2.png)
 
 ![](light_v2.png)
