@@ -67,7 +67,7 @@
     --inline-code:                var(--faded-blue);
     --code-block:                 var(--faded-red);
     --vim-cursor:                 var(--neutral-blue);
-    --text-selection:             rgba(168, 153, 132, 0.5); /* light4 */
+    --text-selection:             var(--dark4)
 }
 
 .theme-light
@@ -428,7 +428,7 @@ img
 
 .suggestion-item.is-selected
 {
-    background-color: var(--background-secondary-alt);
+    background-color: var(--text-selection);
 }
 
 .empty-state-container:hover
