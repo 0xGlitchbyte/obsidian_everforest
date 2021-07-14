@@ -24,6 +24,10 @@ TODO:
 - Create light/dark Hard Flat scheme.
 - Create light/dark Soft Contrast scheme.
 
+## Contributing
+- This repo uses the "main" branch instead of "master"(legacy) branch.
+- Fork this repo, detail changes, and submit a pull request.
+
 
 ![](dark_v2.png)
 
