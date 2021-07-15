@@ -29,6 +29,6 @@ TODO:
 - Fork this repo, detail changes, and submit a pull request.
 
 
-![](dark_v2.png)
+![](dark_v2.1.png)
 
 ![](light_v2.png)
