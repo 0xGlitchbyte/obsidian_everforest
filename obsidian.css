@@ -143,7 +143,7 @@ body {
     --interactive-accent:         var(--dim-aqua);
     --interactive-before:         var(--bg5-dark);
     --background-modifier-border: var(--bg5-dark);
-    --text-accent:                var(--bg5-dark);
+    --text-accent:                var(--dim-blue);
     --interactive-accent-rgb:     var(--dim-blue);
     --inline-code:                var(--dim-blue);
     --code-block:                 var(--fg-dark);
