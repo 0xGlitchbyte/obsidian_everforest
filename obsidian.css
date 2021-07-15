@@ -135,16 +135,16 @@ body {
     --text-title-h5:              var(--dim-aqua);
     --text-title-h6:              var(--dim-purple);
     --text-link:                  var(--faded-blue);
-    --text-a:                     var(--faded-green);
-    --text-a-hover:               var(--dim-green);
+    --text-a:                     var(--dim-aqua);
+    --text-a-hover:               var(--faded-aqua);
     --text-mark:                  rgba(215, 153, 33, 0.4); /* light-yellow */
     --pre-code:                   var(--bg1-dark);
     --text-highlight-bg:          var(--bg_green);
-    --interactive-accent:         var(--bg5-dark);
+    --interactive-accent:         var(--dim-aqua);
     --interactive-before:         var(--bg5-dark);
     --background-modifier-border: var(--bg5-dark);
     --text-accent:                var(--bg5-dark);
-    --interactive-accent-rgb:     var(--faded-green);
+    --interactive-accent-rgb:     var(--dim-blue);
     --inline-code:                var(--dim-blue);
     --code-block:                 var(--fg-dark);
     --vim-cursor:                 var(--faded-blue);
