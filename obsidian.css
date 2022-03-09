@@ -188,8 +188,8 @@ body {
 .theme-light code[class*="language-"],
 .theme-light pre[class*="language-"]
 {
-    text-shadow: none !important;
-    background-color: var(--pre-code) !important;
+    text-shadow: none ;
+    background-color: var(--pre-code) ;
 }
 
 /* 3. General UI */
@@ -210,11 +210,11 @@ body {
 .graph-view.color-fill-highlight,
 .graph-view.color-line-highlight
 {
-    color: var(--interactive-accent-rgb) !important;
+    color: var(--interactive-accent-rgb) ;
 }
 .graph-view.color-text
 {
-    color: var(--text-a-hover) !important;
+    color: var(--text-a-hover) ;
 }
 /*
 .graph-view.color-fill
@@ -230,177 +230,251 @@ body {
 html,
 body
 {
-    font-size: 16px !important;
+    font-size: 16px ;
 }
 
 strong
 {
-    font-weight: 600 !important;
+    font-weight: 600 ;
 }
 
 a,
 .cm-hmd-internal-link
 {
-    color: var(--text-a) !important;
-    text-decoration: none !important;
+    color: var(--text-a) ;
+    text-decoration: none ;
 }
 
 a:hover,
 .cm-hmd-internal-link:hover,
 .cm-url
 {
-    color: var(--text-a-hover) !important;
-    text-decoration: none !important;
+    color: var(--text-a-hover) ;
+    text-decoration: none ;
 }
+
+
+/*----------------------------------------------------------------
+TAGS
+----------------------------------------------------------------*/
+
+.token.tag {
+    padding: 0px 0px;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .token.tag:hover {
+    background: transparent;
+    color: var(--text-a-hover) !important;
+  }
+  
+  /*----------------------------------------------------------------
+  TAG PILLS
+  ----------------------------------------------------------------*/
+  .markdown-preview-section h1 a.tag,
+  .markdown-preview-section h2 a.tag,
+  .markdown-preview-section h3 a.tag,
+  .markdown-preview-section h4 a.tag,
+  .markdown-preview-section h5 a.tag,
+  .markdown-preview-section h4 a.tag {
+    font-weight: inherit;
+  }
+  
+  .tag {
+    background-color: var(--tag-base);
+    border: 1px solid var(--interactive-accent);
+    color: var(--text-a);
+    font-weight: 500;
+    padding: 1.5px 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-align: center;
+    text-decoration: none !important;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .tag:hover {
+    color: var(--interactive-accent);
+  }
+  
+  /*----------------------------------------------------------------
+  TAG REF STYLING
+  ----------------------------------------------------------------*/
+  
+  .tag[href^="#❗️"],
+  .tag[href^="#important❗️"] {
+    background-color: var(--tag-base);
+    border: 1px solid var(--boldred);
+  }
+  
+  .tag[href^="#📓"],
+  .tag[href^="#journal📓"] {
+    background-color: var(--tag-base);
+    border: 1px solid var(--purple);
+  }
+  
+  .tag[href^="#🌱"],
+  .tag[href^="#seedling🌱"],
+  .tag[href^="#🌿"],
+  .tag[href^="#budding🌿"],
+  .tag[href^="#🌳"],
+  .tag[href^="#evergreen🌳"] {
+    background-color: var(--tag-base);
+    border: 1px solid var(--boldgreen);
+  }
 
 mark
 {
-    background-color: var(--text-mark) !important;
+    background-color: var(--text-mark) ;
 }
 
 .view-actions a
 {
-    color: var(--text-normal) !important;
+    color: var(--text-normal) ;
 }
 
 .view-actions a:hover
 {
-    color: var(--text-a) !important;
+    color: var(--text-a) ;
 }
 
 .HyperMD-codeblock-bg
 {
-    background-color: var(--pre-code) !important;
+    background-color: var(--pre-code) ;
 }
 
 .HyperMD-codeblock
 {
-    line-height: 1.4em !important;
-    color: var(--code-block) !important;
+    line-height: 1.4em ;
+    color: var(--code-block) ;
 }
 
 .HyperMD-codeblock-begin
 {
-    border-top-left-radius: 4px !important;
-    border-top-right-radius: 4px !important;
+    border-top-left-radius: 4px ;
+    border-top-right-radius: 4px ;
 }
 
 .HyperMD-codeblock-end
 {
-    border-bottom-left-radius: 4px !important;
-    border-bottom-right-radius: 4px !important;
+    border-bottom-left-radius: 4px ;
+    border-bottom-right-radius: 4px ;
 }
 
 th
 {
-    font-weight: 600 !important;
+    font-weight: 600 ;
 }
 
 thead
 {
-    border-bottom: 2px solid var(--background-modifier-border) !important;
+    border-bottom: 2px solid var(--background-modifier-border) ;
 }
 
 .HyperMD-table-row
 {
-    line-height: normal !important;
-    padding-left: 4px !important;
-    padding-right: 4px !important;
-    /* background-color: var(--pre-code) !important; */
+    line-height: normal ;
+    padding-left: 4px ;
+    padding-right: 4px ;
+    /* background-color: var(--pre-code) ; */
 }
 
 .HyperMD-table-row-0
 {
-    padding-top: 4px !important;
+    padding-top: 4px ;
 }
 
 .CodeMirror-foldgutter-folded,
 .is-collapsed .nav-folder-collapse-indicator
 {
-    color: var(--text-a) !important;
+    color: var(--text-a) ;
 }
 
 .nav-file-tag
 {
-    color: var(--text-a) !important;
+    color: var(--text-a) ;
 }
 
 .is-active .nav-file-title
 {
-    color: var(--text-a) !important;
-    background-color: var(--background-primary-alt) !important;
+    color: var(--text-a) ;
+    background-color: var(--background-primary-alt) ;
 }
 
 .nav-file-title
 {
-    border-bottom-left-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
-    border-top-left-radius: 0 !important;
-    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 ;
+    border-bottom-right-radius: 0 ;
+    border-top-left-radius: 0 ;
+    border-top-right-radius: 0 ;
 }
 
 img
 {
-    display: block !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    display: block ;
+    margin-left: auto ;
+    margin-right: auto ;
 }
 
 .HyperMD-list-line
 {
-    padding-top: 0 !important;
+    padding-top: 0 ;
 }
 
 .CodeMirror-code,
 .CodeMirror-linenumber,
 .cm-formatting
 {
-    font-family: var(--font-monospace) !important;
+    font-family: var(--font-monospace) ;
     font-size: 0.9em;
 }
 
 .markdown-preview-section pre code,
 .markdown-preview-section code
 {
-    font-size: 0.9em !important;
-    background-color: var(--pre-code) !important;
+    font-size: 0.9em ;
+    background-color: var(--pre-code) ;
 }
 
 .markdown-preview-section pre code
 {
-    padding: 4px !important;
-    line-height: 1.4em !important;
-    display: block !important;
-    color: var(--code-block) !important;
+    padding: 4px ;
+    line-height: 1.4em ;
+    display: block ;
+    color: var(--code-block) ;
 }
 
 .markdown-preview-section code
 {
-    color: var(--inline-code) !important;
+    color: var(--inline-code) ;
 }
 
 .cm-s-obsidian,
 .cm-inline-code
 {
-    -webkit-font-smoothing: auto !important;
+    -webkit-font-smoothing: auto ;
 }
 
 .cm-inline-code
 {
-    color: var(--inline-code) !important;
-    background-color: var(--pre-code) !important;
-    padding: 1px !important;
+    color: var(--inline-code) ;
+    background-color: var(--pre-code) ;
+    padding: 1px ;
 }
 
 .workspace-leaf-header-title
 {
-    font-weight: 600 !important;
+    font-weight: 600 ;
 }
 
 .side-dock-title
 {
-    padding-top: 15px !important;
-    font-size: 20px !important;
+    padding-top: 15px ;
+    font-size: 20px ;
 }
 
 .side-dock-ribbon-tab:hover,
@@ -414,14 +488,14 @@ img
 
 .side-dock
 {
-    border-right: 0 !important;
+    border-right: 0 ;
 }
 
 .cm-s-obsidian,
 .markdown-preview-view
 {
-    /* padding-left: 10px !important; */
-    padding-right: 10px !important;
+    /* padding-left: 10px ; */
+    padding-right: 10px ;
 }
 
 /* vertical resize-handle */
@@ -429,15 +503,15 @@ img
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle,
 .workspace-split.mod-right-split > .workspace-leaf-resize-handle
 {
-    width: 1px !important;
-    background-color: var(--background-secondary-alt);
+    width: 1px ;
+    background-color: var(--dim-aqua);
 }
 
 /* horizontal resize-handle */
 .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle
 {
-    height: 1px !important;
-    background-color: var(--background-secondary-alt);
+    height: 1px ;
+    background-color: var(--dim-aqua);
 }
 
 /* Remove vertical split padding */
@@ -451,63 +525,63 @@ img
 
 .markdown-embed-title
 {
-    font-weight: 600 !important;
+    font-weight: 600 ;
 }
 
 .markdown-embed
 {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-    margin-left: 10px !important;
-    margin-right: 10px !important;
+    padding-left: 10px ;
+    padding-right: 10px ;
+    margin-left: 10px ;
+    margin-right: 10px ;
 }
 
 .cm-header-1,
 .markdown-preview-section h1
 {
-    font-weight: 500 !important;
-    font-size: 34px !important;
-    color: var(--text-title-h1) !important;
+    font-weight: 500 ;
+    font-size: 34px ;
+    color: var(--text-title-h1) ;
 }
 
 .cm-header-2,
 .markdown-preview-section h2
 {
-    font-weight: 500 !important;
-    font-size: 26px !important;
-    color: var(--text-title-h2) !important;
+    font-weight: 500 ;
+    font-size: 26px ;
+    color: var(--text-title-h2) ;
 }
 
 .cm-header-3,
 .markdown-preview-section h3
 {
-    font-weight: 500 !important;
-    font-size: 22px !important;
-    color: var(--text-title-h3) !important;
+    font-weight: 500 ;
+    font-size: 22px ;
+    color: var(--text-title-h3) ;
 }
 
 .cm-header-4,
 .markdown-preview-section h4
 {
-    font-weight: 500 !important;
-    font-size: 20px !important;
-    color: var(--text-title-h4) !important;
+    font-weight: 500 ;
+    font-size: 20px ;
+    color: var(--text-title-h4) ;
 }
 
 .cm-header-5,
 .markdown-preview-section h5
 {
-    font-weight: 500 !important;
-    font-size: 18px !important;
-    color: var(--text-title-h5) !important;
+    font-weight: 500 ;
+    font-size: 18px ;
+    color: var(--text-title-h5) ;
 }
 
 .cm-header-6,
 .markdown-preview-section h6
 {
-    font-weight: 500 !important;
-    font-size: 18px !important;
-    color: var(--text-title-h6) !important;
+    font-weight: 500 ;
+    font-size: 18px ;
+    color: var(--text-title-h6) ;
 }
 
 .suggestion-item.is-selected
@@ -518,7 +592,7 @@ img
 .empty-state-container:hover
 {
     background-color: var(--background-secondary-alt);
-    border: 5px solid var(--interactive-accent) !important;
+    border: 5px solid var(--interactive-accent) ;
 }
 
 .checkbox-container
@@ -533,26 +607,26 @@ img
 
 .mod-cta
 {
-    color: var(--background-secondary-alt) !important;
-    font-weight: 600 !important;
+    color: var(--background-secondary-alt) ;
+    font-weight: 600 ;
 }
 
 .mod-cta a
 {
-    color: var(--background-secondary-alt) !important;
-    font-weight: 600 !important;
+    color: var(--background-secondary-alt) ;
+    font-weight: 600 ;
 }
 
 .mod-cta:hover
 {
-    background-color: var(--interactive-before) !important;
-    font-weight: 600 !important;
+    background-color: var(--interactive-before) ;
+    font-weight: 600 ;
 }
 
 .CodeMirror-cursor
 {
-    background-color: var(--vim-cursor) !important;
-    opacity: 60% !important;
+    background-color: var(--vim-cursor) ;
+    opacity: 60% ;
 }
 
 input.task-list-item-checkbox {
@@ -569,12 +643,12 @@ input.task-list-item-checkbox:checked
 
 ::selection
 {
-    background-color: var(--text-selection) !important;
+    background-color: var(--text-selection) ;
 }
 
 .mermaid .note
 {
-    fill: var(--dark3) !important;
+    fill: var(--dark3) ;
 }
 
 .frontmatter-container {
