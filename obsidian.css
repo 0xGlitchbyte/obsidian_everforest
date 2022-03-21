@@ -605,6 +605,11 @@ img
     background-color: var(--interactive-accent);
 }
 
+.checkbox-container.is-enabled:after 
+{
+    background-color: var(--bg5-dark);
+}
+
 .mod-cta
 {
     color: var(--background-secondary-alt) ;
