@@ -661,13 +661,9 @@ input.task-list-item-checkbox:checked
 }
 
 /* Bullet point relationship lines */
-.cm-hmd-list-indent .cm-tab, ul ul { position: relative; }
-.cm-hmd-list-indent .cm-tab::before, ul ul::before {
- content:'';
- border-left: 1px solid var(--dim-blue);
- position: absolute;
-}
-.cm-hmd-list-indent .cm-tab::before { left: 0; top: -5px; bottom: -4px; 
-}
-ul ul::before { left: -11px; top: 0; bottom: 0; 
+.markdown-source-view.mod-cm6 .cm-indent::before,
+.markdown-rendered.show-indentation-guide li > ul::before,
+.markdown-rendered.show-indentation-guide li > ol::before {
+  position: absolute;
+  border-right: 1px solid var(--dim-blue);
 }
