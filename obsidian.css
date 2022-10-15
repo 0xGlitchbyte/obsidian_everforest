@@ -181,7 +181,7 @@ body {
     --interactive-accent:         var(--bg5-light);
     --interactive-before:         var(--bg5-light);
     --background-modifier-border: var(--bg5-light);
-    --text-accent:                var(--bg5-light);
+    --text-accent:                var(--light-dim-green);
     --interactive-accent-rgb:     var(--light-dim-green);
     --inline-code:                var(--light-blue);
     --code-block:                 var(--fg-light);
