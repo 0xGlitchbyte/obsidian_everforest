@@ -36,6 +36,12 @@ body {
     /* font stacks taken directly from Notion */
     --font-monospace: "Hack Nerd Font", "Source Code Pro", monospace;
     -webkit-font-smoothing: auto;
+    --h1-color: var(--text-title-h1);
+    --h2-color: var(--text-title-h2);
+    --h3-color: var(--text-title-h3);
+    --h4-color: var(--text-title-h4);
+    --h5-color: var(--text-title-h5);
+    --h6-color: var(--text-title-h6);
 }
 
 /* 2. Colours */
@@ -175,7 +181,7 @@ body {
     --interactive-accent:         var(--bg5-light);
     --interactive-before:         var(--bg5-light);
     --background-modifier-border: var(--bg5-light);
-    --text-accent:                var(--bg5-light);
+    --text-accent:                var(--light-dim-green);
     --interactive-accent-rgb:     var(--light-dim-green);
     --inline-code:                var(--light-blue);
     --code-block:                 var(--fg-light);
