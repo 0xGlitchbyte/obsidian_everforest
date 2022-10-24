@@ -178,7 +178,7 @@ body {
     --text-mark:                  rgba(215, 153, 33, 0.4); /* light-yellow */
     --pre-code:                   var(--bg1-light);
     --text-highlight-bg:          var(--light-dim-aqua);
-    --interactive-accent:         var(--bg5-light);
+    --interactive-accent:         var(--light-dim-aqua);
     --interactive-before:         var(--bg5-light);
     --background-modifier-border: var(--bg5-light);
     --text-accent:                var(--light-dim-green);
