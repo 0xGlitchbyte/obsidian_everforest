@@ -189,6 +189,15 @@ body {
     --text-selection:             rgba(189, 174, 147, 0.5); /* light3 */
 }
 
+:not(body.everforest-colored-headings) {
+    --text-title-h1: var(--text-normal);
+    --text-title-h2: var(--text-normal);
+    --text-title-h3: var(--text-normal);
+    --text-title-h4: var(--text-normal);
+    --text-title-h5: var(--text-normal);
+    --text-title-h6: var(--text-normal);
+}
+
 .theme-dark code[class*="language-"],
 .theme-dark pre[class*="language-"],
 .theme-light code[class*="language-"],
@@ -673,3 +682,15 @@ input.task-list-item-checkbox:checked
   position: absolute;
   border-right: 1px solid var(--dim-blue);
 }
+
+/* @settings
+
+name: Everforest
+id: everforest-style-settings
+settings:
+    -
+        id: everforest-colored-headings
+        title: Colored Headings
+        type: class-toggle
+        default: true
+*/
