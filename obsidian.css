@@ -542,16 +542,52 @@ body strong {
 
 /* 4. General UI */
 /* 4.1. Workspace split handles */
-.workspace-split.mod-vertical > .workspace-leaf-resize-handle,
-.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
-.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+.workspace-split.mod-vertical > .workspace-leaf-resize-handle {
   width: 1px;
   background-color: var(--interactive-accent);
 }
 
-.workspace-split.mod-horizontal > .workspace-leaf-resize-handle {
+.workspace-split.mod-horizontal:not(.mod-left-split):not(.mod-right-split)
+  > .workspace-leaf-resize-handle {
   height: 1px;
   background-color: var(--interactive-accent);
+}
+
+/*
+ * Obsidian 1.x marks side docks as both mod-horizontal and mod-left/right-split.
+ * Applying the horizontal divider rule to them collapses the vertical drag
+ * handle to a 1px-high target at the bottom of the window. Keep a generous
+ * hit area while drawing the same 1px Everforest accent divider.
+ */
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  min-width: 8px;
+  height: auto;
+  cursor: col-resize;
+  z-index: 20;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  background: transparent;
+  transition: border-color 120ms ease;
+}
+
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle {
+  border-right-width: 3px;
+}
+
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+  border-left-width: 3px;
+}
+
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle:hover {
+  border-right-color: var(--divider-color-hover);
+}
+
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle:hover {
+  border-left-color: var(--divider-color-hover);
 }
 
 /* 4.2. Suggestions */
