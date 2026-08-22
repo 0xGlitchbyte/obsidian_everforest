@@ -570,24 +570,24 @@ body strong {
   z-index: 20;
   border-left-color: transparent;
   border-right-color: transparent;
-  background: linear-gradient(
-    to right,
-    transparent 3px,
-    var(--divider-color) 3px,
-    var(--divider-color) 4px,
-    transparent 4px
-  );
+  background: transparent;
+  transition: border-color 120ms ease;
 }
 
-.workspace-split.mod-left-split > .workspace-leaf-resize-handle:hover,
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle {
+  border-right-width: 3px;
+}
+
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+  border-left-width: 3px;
+}
+
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle:hover {
+  border-right-color: var(--divider-color-hover);
+}
+
 .workspace-split.mod-right-split > .workspace-leaf-resize-handle:hover {
-  background: linear-gradient(
-    to right,
-    transparent 3px,
-    var(--divider-color-hover) 3px,
-    var(--divider-color-hover) 4px,
-    transparent 4px
-  );
+  border-left-color: var(--divider-color-hover);
 }
 
 /* 4.2. Suggestions */
