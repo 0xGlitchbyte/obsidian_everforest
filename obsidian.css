@@ -568,11 +568,24 @@ body strong {
   height: auto;
   cursor: col-resize;
   z-index: 20;
+  border-left-color: transparent;
+  border-right-color: transparent;
   background: linear-gradient(
     to right,
     transparent 3px,
-    var(--interactive-accent) 3px,
-    var(--interactive-accent) 4px,
+    var(--divider-color) 3px,
+    var(--divider-color) 4px,
+    transparent 4px
+  );
+}
+
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle:hover,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle:hover {
+  background: linear-gradient(
+    to right,
+    transparent 3px,
+    var(--divider-color-hover) 3px,
+    var(--divider-color-hover) 4px,
     transparent 4px
   );
 }
