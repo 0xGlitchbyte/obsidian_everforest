@@ -35,7 +35,9 @@ body strong {
   body * {
     animation-duration: 0.01ms;
     animation-iteration-count: 1;
-    transition-duration: 0.01ms;
+    /* A nonzero duration enables transitions on virtualized layout updates,
+       causing tables and scroll position to jump when scrolling. */
+    transition-duration: 0s;
   }
 }
 
